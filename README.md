@@ -1,8 +1,8 @@
-![Demo](https://raw.githubusercontent.com/shadeiskndr/shadeiskndr.github.io/main/uploads/EduCafe%20Demo.gif?token=BAIEW3QQJDOCC5I5DMWEM3DGREMGM)
-
 # EduCafe Booking Web-App
 
 EduCafe Booking Web App is a full-stack school cafeteria service web app that allows students to order their meals remotely, enables staff to manage food bookings, and improves the manager’s workflow. Designed and developed the web app’s UI layer using JSPs & Servlets to provide a user-friendly experience. Implemented the business logic layer using EJBs to handle the application’s core functionalities. Integrated the MySQL database to manage and store all relevant data efficiently. This is a university project for the ISB37804 Reuse and Component Based Development class.
+
+![Demo](https://raw.githubusercontent.com/shadeiskndr/shadeiskndr.github.io/main/uploads/EduCafe%20Demo.gif?token=BAIEW3QQJDOCC5I5DMWEM3DGREMGM)
 
 ## Table of Contents
 
