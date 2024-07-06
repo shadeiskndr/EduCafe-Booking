@@ -176,7 +176,7 @@ public class mainServlet extends HttpServlet {
                 } else {
                     if (editor.equals("manager")) {
                         request.setAttribute("url", "/Assignment-war/manageuser");
-                    }else{
+                    } else {
                         request.setAttribute("url", "/Assignment-war/");
                     }
                 }
@@ -455,14 +455,15 @@ public class mainServlet extends HttpServlet {
 
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the
+    // + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -606,7 +607,7 @@ public class mainServlet extends HttpServlet {
                 request.setAttribute("liststaff", liststaff);
                 request.setAttribute("listcustomer", listcustomer);
 
-                //System.out.println(listuser.get(1));
+                // System.out.println(listuser.get(1));
                 request.getRequestDispatcher("manageuser.jsp").forward(request, response);
             } catch (SQLException ex) {
                 Logger.getLogger(mainServlet.class.getName()).log(Level.SEVERE, null, ex);
@@ -633,7 +634,7 @@ public class mainServlet extends HttpServlet {
                     status = "new";
                 }
                 request.setAttribute("viewstatus", status);
-                //System.out.println(listuser.get(1));
+                // System.out.println(listuser.get(1));
                 request.getRequestDispatcher("listbooking.jsp").forward(request, response);
             } catch (SQLException ex) {
                 Logger.getLogger(mainServlet.class.getName()).log(Level.SEVERE, null, ex);
@@ -675,7 +676,7 @@ public class mainServlet extends HttpServlet {
                 Logger.getLogger(mainServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
         } else {
-            //processRequest(request, response);
+            // processRequest(request, response);
             request.setAttribute("error", "404 Page not found");
             request.getRequestDispatcher("error/error.jsp").forward(request, response);
         }
@@ -684,18 +685,18 @@ public class mainServlet extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //System.out.println("process post");
+        // System.out.println("process post");
         String action = request.getServletPath();
-        //System.out.println(action);
+        // System.out.println(action);
 
         if (action.equals("/login")) {
             userlogin(request, response);
@@ -716,7 +717,7 @@ public class mainServlet extends HttpServlet {
         } else if (action.equals("/updatebookingstatus")) {
             updatebookingstatus(request, response);
         } else {
-            //processRequest(request, response);
+            // processRequest(request, response);
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }

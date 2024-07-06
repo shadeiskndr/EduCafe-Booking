@@ -1,0 +1,22 @@
+<%-- styles.jspf --%>
+<style>
+    .dark-mode {
+        background-color: #1a202c;
+        color: #cbd5e0;
+    }
+    .dark-mode .bg-white {
+        background-color: #2d3748;
+    }
+    .dark-mode .text-gray-700 {
+        color: #a0aec0;
+    }
+    .dark-mode .bg-gray-100 {
+        background-color: #2d3748ec;
+    }
+    .dark-mode .bg-gray-500 {
+        background-color: #4a5568;
+    }
+    .dark-mode .hover\:bg-gray-700:hover {
+        background-color: #2d3748;
+    }
+</style>

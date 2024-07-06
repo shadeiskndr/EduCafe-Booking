@@ -5,20 +5,25 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page | EduCafe Booking Web-App</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/f419ce4a58.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="bg-gray-100">
         <section class="h-screen flex">
-            <div class="flex w-1/2 justify-center items-center bg-white">
+            <div class="flex w-1/2 justify-center items-center bg-black">
                 <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-                    class="max-w-full h-auto"
+                    src="https://img.freepik.com/free-photo/cup-coffee-glass-counter-bakery_23-2147892886.jpg?t=st=1720223363~exp=1720226963~hmac=e2a414d6cd198846b61ec67ded8b72f7e6ec14c2f5f087f01b521afd5950bc26&w=826"
+                    class="max-w-100 h-auto"
                     alt="Login Image"
+                    style="object-fit: cover; width: 100%; height: 100%;"
                 />
             </div>
             <div class="flex w-1/2 justify-center items-center p-10">
                 <div class="max-w-md w-full space-y-8">
-                    <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600 text-center">EduCafe Booking Web-App</h1>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-mug-saucer text-6xl mb-4"></i>
+                        <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600 text-center">EduCafe Booking Web-App</h1>
+                    </div>
                     <form method="POST" action="/Assignment-war/login" class="mt-8 space-y-6">
                         <!--Email input--> 
                         <div class="rounded-md shadow-sm -space-y-px">
@@ -73,11 +78,12 @@
                     </form>
                 </div>
             </div>
-            <div class="flex w-1/2 justify-center items-center bg-white">
+            <div class="flex w-1/2 justify-center items-center bg-black">
                 <img
-                    src="https://preview.colorlib.com/theme/bootstrap/login-form-07/images/undraw_remotely_2j6y.svg"
+                    src="https://img.freepik.com/free-photo/freshly-baked-pastry-with-cup-coffee-wooden-table_23-2147892878.jpg?t=st=1720223422~exp=1720227022~hmac=92c5113c5afa4b098610a77b2567869050b379592e2e437c0f29bb5c164f4094&w=826"
                     alt="Cafeteria"
                     class="max-w-full h-auto"
+                    style="object-fit: cover; width: 100%; height: 100%;"
                 />
             </div>
         </section>

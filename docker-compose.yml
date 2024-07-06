@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: shahathir
+      MYSQL_DATABASE: cafe
+      MYSQL_USER: root
+      MYSQL_PASSWORD: shahathir
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  glassfish:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: glassfish
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: cafe
+      MYSQL_USER: root
+      MYSQL_PASSWORD: shahathir
+    ports:
+      - "8080:8080"
+      - "4848:4848"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql-data:

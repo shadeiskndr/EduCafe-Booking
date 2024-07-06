@@ -1,0 +1,25 @@
+<%-- sidebar.jspf --%>
+<div class="w-72 h-screen bg-white shadow-md flex flex-col">
+    <div class="p-4">
+        <h1 class="text-2xl font-bold mb-4"><i class="fa-solid fa-mug-saucer text-2xl mb-4 mr-2"></i>EduCafe Booking</h1>
+        <div class="space-y-2">
+            <a href="/Assignment-war/editprofile?id=${nuser.id}&role=${nuser.role}&editor=customer" class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <i class="fas fa-user-edit mr-2"></i>
+                Edit Profile
+            </a>
+            <a href="/Assignment-war/listbooking" class="flex items-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Check Bookings
+            </a>
+            <a href="/Assignment-war/logout" class="flex items-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                <i class="fas fa-sign-out-alt mr-2"></i>
+                Logout
+            </a>
+            <!-- Dark Mode Toggle Button -->
+            <button id="dark-mode-toggle" class="flex items-center bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                <i class="fas fa-moon mr-2"></i>
+                Toggle Dark Mode
+            </button>
+        </div>
+    </div>
+</div>
